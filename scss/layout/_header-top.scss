@@ -2,7 +2,6 @@
   background: #fcfcfc;
   .header-top {
     display: flex;
-    justify-content: flex-end;
     background: #fcfcfc;
     align-items: center;
     max-width: 1400px;
@@ -10,15 +9,19 @@
     & > * {
       flex-shrink: 0;
     }
+    justify-content: space-between;
+    padding: 0.5rem 1.1rem;
     @include media-breakpoint-up(md) {
       flex: 75%;
       padding: 5px 0;
       padding-right: 20px;
+      justify-content: flex-end;
     }
     @include media-breakpoint-up(lg) {
       flex: 50%;
       padding: 5px 0;
       padding-right: 20px;
+      justify-content: flex-end;
     }
     .address,
     .cta,
@@ -33,14 +36,23 @@
       }
     }
     .address {
+      a {
+        color: #000000;
+      }
+      display: none;
       @include media-breakpoint-up(md) {
         font-size: 14px;
+        display: flex;
       }
       @include media-breakpoint-up(lg) {
         font-size: 14px;
+        display: flex;
       }
     }
     .cta {
+      a {
+        color: #000000 !important;
+      }
       @include media-breakpoint-up(md) {
         font-size: 18px;
       }

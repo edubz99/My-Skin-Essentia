@@ -1,11 +1,29 @@
 .navbar {
+  padding: 1.1rem 1.1em;
+  position: fixed;
+  width: 100%;
   @include media-breakpoint-up(md) {
-    padding: 0.3rem 0;
+    padding: 0.3rem 0em;
+    position: inherit;
   }
   @include media-breakpoint-up(lg) {
     padding: 0.3rem 0;
+    position: inherit;
   }
   .container {
     max-width: 1400px;
+  }
+  .navbar-brand {
+    font-size: 15px;
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 22px;
+    }
+  }
+  .oi-menu {
+    font-size: 22px;
+    color: white;
   }
 }

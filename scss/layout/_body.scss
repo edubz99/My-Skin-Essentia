@@ -3,3 +3,22 @@ body {
   overflow-x: hidden !important;
   margin: 0 auto;
 }
+
+.mobile-hide {
+  display: none !important;
+  @include media-breakpoint-up(md) {
+    display: flex !important;
+  }
+  @include media-breakpoint-up(lg) {
+    display: flex !important;
+  }
+}
+.desktop-hide {
+  display: flex !important;
+  @include media-breakpoint-up(md) {
+    display: none !important;
+  }
+  @include media-breakpoint-up(lg) {
+    display: none !important;
+  }
+}

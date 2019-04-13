@@ -22,6 +22,8 @@
   &.home-landing {
     .swiper-slide {
       height: 50vh;
+      background-position: center;
+      background-size: cover;
       @include media-breakpoint-up(md) {
         height: 600px;
         margin: 0;
@@ -43,21 +45,50 @@
           bottom: 50px;
           right: 50px;
         }
+        h1 {
+          font-size: 1.8rem;
+          @include media-breakpoint-up(md) {
+            font-size: 2.5rem;
+          }
+          @include media-breakpoint-up(lg) {
+            font-size: 2.5rem;
+          }
+        }
         h1,
         p {
-          padding: 25px;
+          padding: 15px;
           background: rgba(0, 0, 0, 0.2);
-          text-align: left;
+          text-align: center;
           color: white;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+          @include media-breakpoint-up(md) {
+            text-align: left;
+          }
+          @include media-breakpoint-up(lg) {
+            text-align: left;
+          }
         }
         p {
           text-align: center;
+        }
+        a {
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+          &:hover {
+            text-shadow: none;
+          }
         }
       }
     }
     .swiper-button-prev,
     .swiper-button-next {
       color: #fff;
+      display: none;
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
     }
   }
   &.welcome-slider {

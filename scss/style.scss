@@ -34,7 +34,7 @@ html {
 body {
   font-family: $font-primary;
   background: $white;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
   font-weight: 300;
   color: lighten($black, 50%);
@@ -742,7 +742,8 @@ h5,
     }
   }
 }
-
+#appointment-booking {
+}
 .appointment {
   background: #252525;
   .overlay {
@@ -753,6 +754,9 @@ h5,
     bottom: 0;
     background: #252525;
     opacity: 1;
+  }
+  @media (min-width: 768px) {
+    margin: 7em 0;
   }
 }
 .appointment-info {

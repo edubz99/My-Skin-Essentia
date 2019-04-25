@@ -1,0 +1,147 @@
+.generic-swiper-wrapper {
+  position: relative;
+  max-width: 1400px !important; }
+  @media (min-width: 768px) {
+    .generic-swiper-wrapper {
+      margin: 40px auto !important; } }
+  .generic-swiper-wrapper:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    background: white;
+    width: 18%;
+    top: 32px;
+    right: 0;
+    height: 80%;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.5; }
+    @media (min-width: 768px) {
+      .generic-swiper-wrapper:after {
+        width: 10%; } }
+    @media (min-width: 1200px) {
+      .generic-swiper-wrapper:after {
+        width: 5%; } }
+  .generic-swiper-wrapper h2 {
+    text-align: center;
+    margin: 20px auto; }
+  .generic-swiper-wrapper .generic-swiper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .generic-swiper-wrapper .generic-swiper {
+        padding-top: 12px;
+        padding-left: 100px; } }
+    .generic-swiper-wrapper .generic-swiper .swiper-wrapper {
+      margin: 0px auto 0px 15px;
+      margin-bottom: 50px; }
+      .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide {
+        margin-right: 30px; }
+        .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide a {
+          text-decoration: none; }
+        .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          width: 100%;
+          max-width: 235px;
+          cursor: pointer; }
+          @media (min-width: 768px) {
+            .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card {
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+              max-width: 380px;
+              padding-right: 30px; } }
+          .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card .card-image {
+            background: #d2d2d2;
+            max-height: 226px;
+            position: relative;
+            overflow: hidden; }
+            .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card .card-image::before {
+              position: absolute;
+              content: url("../../inc/images/image-overlay.svg");
+              bottom: -5px; }
+            .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card .card-image img {
+              height: auto;
+              width: 100%;
+              max-height: 141px; }
+              @media (min-width: 768px) {
+                .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card .card-image img {
+                  min-height: 226px;
+                  min-width: 380px; } }
+          .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card .card-body {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            display: flex;
+            flex-direction: column; }
+            .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card .card-body .card-title {
+              color: #54585a;
+              margin: 10px 0px !important;
+              min-height: 42px; }
+              @media (min-width: 768px) {
+                .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card .card-body .card-title {
+                  min-height: 66px;
+                  margin: 15px 0px !important;
+                  min-height: inherit; } }
+            .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card .card-body .card-text {
+              margin: 0px 0px 10px 0px;
+              max-height: 80px;
+              min-height: 80px;
+              overflow: hidden;
+              -o-text-overflow: ellipsis;
+              text-overflow: ellipsis; }
+              @media (min-width: 768px) {
+                .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card .card-body .card-text {
+                  margin-bottom: 20px;
+                  max-height: 84px;
+                  min-height: 84px; } }
+            .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .card .card-body button {
+              max-width: 65%;
+              z-index: 10; }
+    .generic-swiper-wrapper .generic-swiper .generic-swiper-nav {
+      position: relative;
+      margin: -25px auto 40px auto; }
+      @media (min-width: 768px) {
+        .generic-swiper-wrapper .generic-swiper .generic-swiper-nav {
+          margin: 0px 100px 20px 0px; } }
+      .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-pagination {
+        position: inherit; }
+        @media (min-width: 768px) {
+          .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-pagination {
+            position: relative;
+            top: 10px; } }
+        .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+          background-color: #5c354a; }
+          .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #54585a; }
+      .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-button-prev,
+      .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-button-next {
+        position: absolute; }
+      .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-button-next {
+        background-image: url("../../inc/images/Icons/purple-chevron.svg");
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        right: -35px; }
+      .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-button-prev {
+        background-image: url("../../inc/images/Icons/purple-chevron.svg");
+        left: -40px; }

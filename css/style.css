@@ -7524,73 +7524,6 @@ body {
 .swiper-container-services .swiper-slide {
   max-width: 320px; }
 
-.home-services {
-  background: #fff;
-  overflow: hidden;
-  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  -o-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s; }
-  @media screen and (prefers-reduced-motion: reduce) {
-    .home-services {
-      -webkit-transition: none;
-      -o-transition: none;
-      transition: none; } }
-  @media (max-width: 767.98px) {
-    .home-services {
-      margin-bottom: 30px; } }
-  .home-services:hover .img {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1); }
-  .home-services .info {
-    width: 100%;
-    padding: 25px; }
-    .home-services .info h3 {
-      font-size: 15px;
-      text-transform: uppercase; }
-      .home-services .info h3 a {
-        color: #e9afa3; }
-    .home-services .info span.position {
-      display: block;
-      margin-bottom: 15px;
-      font-size: 12px;
-      font-weight: 400;
-      color: #cccccc; }
-  .home-services .img {
-    height: 200px;
-    border: 1px solid #f0f0f0;
-    margin: 0 auto;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    @media screen and (prefers-reduced-motion: reduce) {
-      .home-services .img {
-        -webkit-transition: none;
-        -o-transition: none;
-        transition: none; } }
-    @media (min-width: 768px) {
-      .home-services .img {
-        width: 100%;
-        height: 200px;
-        border-radius: 0px; } }
-    @media (min-width: 992px) {
-      .home-services .img {
-        width: 100%;
-        height: 200px;
-        border-radius: 0px; } }
-  .home-services:hover, .home-services:focus {
-    -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2); }
-    .home-services:hover .img, .home-services:focus .img {
-      border: 1px solid #e9afa3; }
-
 .home-testimonials .swiper-slide {
   background: #f7f7f7 !important; }
 
@@ -7639,6 +7572,178 @@ body {
 
 .booking-form .material {
   background-color: rgba(255, 255, 255, 0.1); }
+
+.generic-swiper-wrapper {
+  position: relative;
+  max-width: 1400px !important; }
+  @media (min-width: 768px) {
+    .generic-swiper-wrapper {
+      margin: 40px auto !important; } }
+  .generic-swiper-wrapper h2 {
+    text-align: center;
+    margin: 20px auto; }
+  .generic-swiper-wrapper .generic-swiper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .generic-swiper-wrapper .generic-swiper {
+        padding-top: 12px;
+        padding-left: 100px; } }
+    .generic-swiper-wrapper .generic-swiper .swiper-wrapper {
+      margin: 0px auto 0px 15px;
+      margin-bottom: 50px; }
+      .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide {
+        margin-right: 30px;
+        background: transparent !important; }
+        @media (min-width: 768px) {
+          .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide {
+            min-height: 482px; } }
+        .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide a {
+          text-decoration: none; }
+        .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .home-services {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          width: 100%;
+          min-width: 275px;
+          max-width: 275px;
+          cursor: pointer; }
+          @media (min-width: 768px) {
+            .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .home-services {
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+              max-width: 247px; } }
+          .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .home-services .card-image {
+            background: #d2d2d2;
+            position: relative;
+            overflow: hidden; }
+            .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .home-services .card-image img {
+              height: auto;
+              max-height: 200px;
+              width: 100%; }
+          .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .home-services .info .text {
+            font-size: 15px;
+            line-height: 1.8;
+            font-weight: 300;
+            color: gray;
+            min-height: 122px; }
+    .generic-swiper-wrapper .generic-swiper .generic-swiper-nav {
+      position: relative;
+      margin: -25px auto 40px auto; }
+      @media (min-width: 768px) {
+        .generic-swiper-wrapper .generic-swiper .generic-swiper-nav {
+          margin: 0px 100px 20px 0px; } }
+      .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-pagination {
+        position: inherit; }
+        @media (min-width: 768px) {
+          .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-pagination {
+            position: relative;
+            top: 4px; } }
+        .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+          width: 14px;
+          height: 14px;
+          margin: 0 5px;
+          background-color: #5c354a; }
+          @media (min-width: 768px) {
+            .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+              width: 18px;
+              height: 18px; } }
+          .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #54585a; }
+      .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-button-prev,
+      .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-button-next {
+        position: absolute; }
+      .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-button-next {
+        right: -35px; }
+      .generic-swiper-wrapper .generic-swiper .generic-swiper-nav .swiper-button-prev {
+        left: -40px; }
+
+.home-services-wrapper .container {
+  max-width: 1200px; }
+
+@media (min-width: 768px) {
+  .home-services-wrapper {
+    padding: 3em 0 !important; } }
+
+@media (min-width: 992px) {
+  .home-services-wrapper {
+    padding: 3em 0 !important; } }
+
+.home-services-wrapper .home-services {
+  background: #fff;
+  overflow: hidden;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .home-services-wrapper .home-services {
+      -webkit-transition: none;
+      -o-transition: none;
+      transition: none; } }
+  @media (max-width: 767.98px) {
+    .home-services-wrapper .home-services {
+      margin-bottom: 30px; } }
+  .home-services-wrapper .home-services:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+  .home-services-wrapper .home-services .info {
+    width: 100%;
+    padding: 25px; }
+    .home-services-wrapper .home-services .info h3 {
+      font-size: 16px;
+      text-transform: uppercase;
+      min-height: 37px; }
+      .home-services-wrapper .home-services .info h3 a {
+        color: #e9afa3; }
+    .home-services-wrapper .home-services .info span.position {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 12px;
+      font-weight: 400;
+      color: #cccccc; }
+  .home-services-wrapper .home-services img {
+    height: 200px;
+    border: 1px solid #f0f0f0;
+    margin: 0 auto;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .home-services-wrapper .home-services img {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; } }
+    @media (min-width: 768px) {
+      .home-services-wrapper .home-services img {
+        width: 100%;
+        height: 200px;
+        border-radius: 0px; } }
+    @media (min-width: 992px) {
+      .home-services-wrapper .home-services img {
+        width: 100%;
+        height: 200px;
+        border-radius: 0px; } }
 
 .priceList-container {
   padding: 30px;
@@ -7729,7 +7834,7 @@ html {
 body {
   font-family: "Montserrat", Arial, sans-serif;
   background: #fff;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
   font-weight: 300;
   color: gray; }
@@ -8305,6 +8410,9 @@ h5,
     bottom: 0;
     background: #252525;
     opacity: 1; }
+  @media (min-width: 768px) {
+    .appointment {
+      margin: 7em 0; } }
 
 .appointment-info {
   width: 100%;

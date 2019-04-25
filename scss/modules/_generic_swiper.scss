@@ -1,0 +1,113 @@
+//Generic swiper used for  - Homepage services swiper, Case studies - other services, Product - case studies, Services Page
+.generic-swiper-wrapper {
+  position: relative;
+  max-width: 1400px !important;
+  @media (min-width: 768px) {
+    margin: 40px auto !important;
+  }
+  h2 {
+    text-align: center;
+    margin: 20px auto;
+  }
+  .generic-swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 768px) {
+      padding-top: 12px;
+      padding-left: 100px;
+    }
+    .swiper-wrapper {
+      // transition-duration: 200ms !important;
+      margin: 0px auto 0px 15px;
+      margin-bottom: 50px;
+      .swiper-slide {
+        margin-right: 30px;
+
+        @media (min-width: 768px) {
+          min-height: 482px;
+        }
+        background: transparent !important;
+        a {
+          text-decoration: none;
+        }
+        .home-services {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          min-width: 275px;
+          max-width: 275px;
+          cursor: pointer;
+          @media (min-width: 768px) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            max-width: 247px;
+          }
+          .card-image {
+            background: #d2d2d2;
+            position: relative;
+            overflow: hidden;
+            img {
+              height: auto;
+              max-height: 200px;
+              width: 100%;
+            }
+          }
+          .info {
+            .text {
+              font-size: 15px;
+              line-height: 1.8;
+              font-weight: 300;
+              color: gray;
+              min-height: 122px;
+            }
+          }
+        }
+      }
+    }
+    .generic-swiper-nav {
+      position: relative;
+
+      margin: -25px auto 40px auto;
+      @media (min-width: 768px) {
+        margin: 0px 100px 20px 0px;
+      }
+      .swiper-pagination {
+        //Pagination
+        position: inherit;
+        @media (min-width: 768px) {
+          position: relative;
+          top: 4px;
+        }
+        &.swiper-pagination-bullets {
+          .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+            margin: 0 5px;
+            @media (min-width: 768px) {
+              width: 18px;
+              height: 18px;
+            }
+            background-color: rgba(92, 53, 74, 1);
+            &.swiper-pagination-bullet-active {
+              background-color: #54585a;
+            }
+          }
+        }
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+        position: absolute;
+      }
+      .swiper-button-next {
+        // background-image: url("../../inc/images/Icons/purple-chevron.svg");
+        // transform: rotate(180deg);
+        right: -35px;
+      }
+      .swiper-button-prev {
+        // background-image: url("../../inc/images/Icons/purple-chevron.svg");
+        left: -40px;
+      }
+    }
+  }
+}

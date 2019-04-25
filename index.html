@@ -60,9 +60,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
 		<link rel="stylesheet" href="css/style.css">
-		<!-- <link rel="icon" 
-      type="image/png" 
-      href="images/bg_1.jpg"> -->
+
   </head>
   <body>
     
@@ -96,21 +94,20 @@
 		<!-- END nav -->
 		
 	
-	<!-- slider start -->
+	<!-- Landing slider start -->
 	<div class="swiper-container home-landing">
 		<div class="swiper-wrapper">
-			<div class="swiper-slide" style="background: url('images/latest/homepage/landing/lip-filler.jpg')">
-				<div class="landing-card">
-					<h1>Dermal Aesthetics</h1>
-					<p>Restore, enhance and define your features with Dermal Fillers</p>
-					<a href="#appointment-booking" class="btn btn-white btn-outline-white px-4 py-2">Book now</a>
+				<div class="swiper-slide" style="background: url('images/latest/homepage/landing/lip-filler.jpg')">
+					<div class="landing-card">
+						<h1>Dermal Aesthetics</h1>
+						<p>Restore, enhance and define your features with Dermal Fillers</p>
+						<!-- <a href="#appointment-booking" class="btn btn-white btn-outline-white px-4 py-2">Book now</a> -->
+					</div>
 				</div>
-			</div>
 			<div class="swiper-slide" style="background: url('images/latest/homepage/landing/lashes-extension.jpg')">
 				<div class="landing-card">
 					<h1>Your Beautiful New Lashes</h1>
 					<p>Prepare to have long, beautiful lashes 24/7 </p>
-					<a href="#appointment-booking" class="btn btn-white btn-outline-white px-4 py-2">Book now</a>
 				</div>
 			</div>
 			
@@ -118,21 +115,18 @@
 				<div class="landing-card">
 					<h1>Carbon Skin Rejuvenation</h1>
 					<p>Reduces fine lines and wrinkles & removes dead skin cells</p>
-					<a href="#appointment-booking" class="btn btn-white btn-outline-white px-4 py-2">Book now</a>
 				</div>
 			</div>
 			<div class="swiper-slide" style="background: url('images/latest/homepage/landing/eyebrow-shaping.jpg')">
 				<div class="landing-card">
 					<h1>Brow & Lashes Aesthetics</h1>
 					<p>Your eyebrows define your face, work them to their full potential</p>
-					<a href="#appointment-booking" class="btn btn-white btn-outline-white px-4 py-2">Book now</a>
 				</div>
 			</div>
 			<div class="swiper-slide" style="background: url('images/latest/homepage/landing/facial-massage.jpg')">
 				<div class="landing-card">
 					<h1>Luxury Facials</h1>
 					<p>Where science meets nature, offering results driven treatments.</p>
-					<a href="#appointment-booking" class="btn btn-white btn-outline-white px-4 py-2">Book now</a>
 				</div>
 			</div>
 		</div>
@@ -140,10 +134,8 @@
 		<!-- Add Pagination -->
 			<div class="swiper-pagination swiper-pagination-white"></div>
 			<!-- Add Arrows -->
-			<div class="swiper-button-next swiper-button-white"></div>
-			<div class="swiper-button-prev swiper-button-white"></div>
 	</div>
-	<!-- slider start -->
+	<!--  Landing slider end -->
 
 	<section class="section home-all-about">
 		<div class="container">
@@ -166,7 +158,7 @@
 		</div>
 	</section>
 	
-    <section class="section bg-light mb-5">
+    <section class="section bg-light mb-5 home-services-wrapper">
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-12 heading-section animate text-center">
@@ -174,105 +166,134 @@
             <p>At My Skin Essentia we aim to provide our clients with the finest quality of treatments available in the skin and beauty industry. We continually strive to deliver the most innovative technology and results-driven techniques for complete satisfaction.</p>
           </div>
         </div>
-        <div class="row">
-        	<div class="col-lg-3 d-flex mb-sm-4 animate">
-        		<div class="home-services">
-      				<div class="img mb-2" style="background-image: url(images/latest/homepage/services/dermal-fillers.jpg);"></div>
-      				<div class="info text-center">
-      					<h3><a href="teacher-single.html">Dermal Fillers</a></h3>
-      					<div class="text">
-	        				<p>My Skin Essentia offers a range of Dermal Filler treatments to enhance and rejuvenate your skin.</p>
+        <div class="row generic-swiper-wrapper ">
+			<!-- Services Swiper start -->
+			<div class="swiper-container generic-swiper">
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide" data-link="services/facial.html">
+						<div class="home-services">
+							<div class="card-image">
+								<img src="images/latest/homepage/services/facial.jpg" alt="relaxing facial"> 
+							</div>
+							<div class="info text-center">
+									<h3><a href="/services/facials.html">Facials</a></h3>
+									<div class="text">
+										<p>All natural ingredients, offering you the most deeply cleansing facial treatments. A new start for smoother, younger – looking skin.</p>
+									</div>
+								<a href="/services/facials.html" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
+							</div>
 						</div>
-						<a href="#" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
-      				</div>
-        		</div>
-        	</div>
-        	<div class="col-lg-3 d-flex mb-sm-4 animate">
-        		<div class="home-services">
-      				<div class="img mb-2" style="background-image: url(images/latest/homepage/services/brows-eyelashes.jpg);"></div>
-      				<div class="info text-center">
-      					<h3><a href="teacher-single.html">Eyelashes & Brows</a></h3>
-      					<div class="text">
-	        				<p>Naturally beautiful, individually-applied lashes for eyes that deserve to be noticed.</p>
+					</div>
+					<div class="swiper-slide" data-link="services/eyelashes-brows.html">
+						<div class="home-services">
+							<div class="card-image">
+								<img src="images/latest/homepage/services/brows-eyelashes.jpg" alt="eyelash extensions"> 
+							</div>
+							<div class="info text-center">
+									<h3><a href="/services/eyelashes-brows.html">Eyelashes & Brows</a></h3>
+									<div class="text">
+										<p>Naturally beautiful, individually-applied lashes for eyes that deserve to be noticed.</p>
+									</div>
+								<a href="/services/eyelashes-brows.html" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
+							</div>
 						</div>
-						<a href="#" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
-      				</div>
-        		</div>
-        	</div>
-        	<div class="col-lg-3 d-flex mb-sm-4 animate">
-        		<div class="home-services">
-      				<div class="img mb-2" style="background-image: url(images/latest/homepage/services/skin-treatment.jpg);"></div>
-      				<div class="info text-center">
-      					<h3><a href="teacher-single.html">Skin Treatment</a></h3>
-      					<div class="text">
-	        				<p>We offer a variety of skin specialist treatments, which include hollywood carbon facials and many more.</p>
+					</div>
+					<div class="swiper-slide" data-link="services/dermal-fillers.html">
+						<div class="home-services">
+							<div class="card-image">
+								<img src="images/latest/homepage/services/dermal-fillers.jpg" alt="dermal fillers"> 
+							</div>
+							<div class="info text-center">
+									<h3><a href="/services/dermal-fillers.html">Dermal Fillers</a></h3>
+									<div class="text">
+										<p>My Skin Essentia offers a range of Dermal Filler treatments to enhance and rejuvenate your skin.</p>
+									</div>
+								<a href="/services/dermal-fillers.html" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
+							</div>
 						</div>
-						<a href="#" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
-      				</div>
-        		</div>
-        	</div>
-        	<div class="col-lg-3 d-flex mb-sm-4 animate">
-        		<div class="home-services">
-      				<div class="img mb-2" style="background-image: url(images/latest/homepage/services/tatto-removal.jpg);"></div>
-      				<div class="info text-center">
-      					<h3><a href="teacher-single.html">Laser Tatoo Removal</a></h3>
-      					<div class="text">
-	        				<p>The only laser technology for all skin types. Laser scaring is the thing of the past, we remove all tattoo colours. </p>
+					</div>
+					<div class="swiper-slide" data-link="services/waxing.html">
+						<div class="home-services">
+							<div class="card-image">
+								<img src="images/latest/homepage/services/waxing.jpg" alt="eyebrow waxing"> 
+							</div>
+							<div class="info text-center">
+									<h3><a href="/services/waxing.html">Waxing</a></h3>
+									<div class="text">
+										<p>We offer a high standard of waxing treatments for the legs, arms, eyebrows. We guarantee a smooth and clean finish every time.</p>
+									</div>
+								<a href="/services/waxing.html" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
+							</div>
 						</div>
-						<a href="#" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
-      				</div>
-        		</div>
-			</div>
-			<div class="col-lg-3 d-flex mb-sm-4 animate">
-				<div class="home-services">
-						<div class="img mb-2" style="background-image: url(images/latest/homepage/services/facial.jpg);"></div>
-						<div class="info text-center">
-							<h3><a href="teacher-single.html">Facials</a></h3>
-							<div class="text">
-							<p>All natural ingredients, offering you the most deeply cleansing facial treatments. A new start for smoother, younger – looking skin.</p>
+					</div>
+					<div class="swiper-slide" data-link="services/tattoo-removal.html">
+						<div class="home-services">
+							<div class="card-image">
+								<img src="images/latest/homepage/services/tattoo-removal.jpg" alt="removing a tattoo"> 
+							</div>
+							<div class="info text-center">
+									<h3><a href="/services/skin-treatment.html">Laser Tattoo Removal</a></h3>
+									<div class="text">
+										<p>The only laser technology for all skin types. Laser scaring is the thing of the past, we remove all tattoo colours.</p>
+									</div>
+								<a href="/services/tattoo-removal.html" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
+							</div>
 						</div>
-							<a href="#" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
+					</div>
+					<div class="swiper-slide" data-link="services/advanced-electrolysis-procedures.html">
+						<div class="home-services">
+							<div class="card-image">
+								<img src="images/latest/homepage/services/skin-tag-removal.jpg" alt="removing mole"> 
+							</div>
+							<div class="info text-center">
+									<h3><a href="/services/cosmetic-treatment.html">Advanced Electrolysis Procedures</a></h3>
+									<div class="text">
+										<p>From skin tags, hair in mole to blood spots, My Skin Essentia removes unwated blemishes.</p>
+									</div>
+								<a href="/services/advanced-electrolysis-procedures.html" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
+							</div>
 						</div>
+					</div>
+					<div class="swiper-slide" data-link="services/skin-treatment.html">
+						<div class="home-services">
+							<div class="card-image">
+								<img src="images/latest/homepage/services/skin-treatment.jpg" alt="clear skin"> 
+							</div>
+							<div class="info text-center">
+									<h3><a href="/services/skin-treatment.html">Skin Treatment</a></h3>
+									<div class="text">
+										<p>We offer a variety of skin specialist treatments, which include hollywood carbon facials and many more.</p>
+									</div>
+								<a href="/services/skin-treatment.html" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide" data-link="services/cosmetic-treatment.html">
+						<div class="home-services">
+							<div class="card-image">
+								<img src="images/latest/homepage/services/laser-hair-removal.jpg" alt="cosmetic hair removal"> 
+							</div>
+							<div class="info text-center">
+								<h3><a href="/services/cosmetic-treatment.html">Cosmetic Treatments</a></h3>
+								<div class="text">
+									<p>We provides a full range of non-surgical cosmetic procedures specialising in the most advanced laser and aesthetic treatments.</p>
+								</div>
+								<a href="/services/cosmetic-treatment.html" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="generic-swiper-nav">
+					<!-- If we need pagination -->
+					<div class="swiper-pagination generic-swiper-pagination"></div>
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev swiper-button-black"></div>
+					<div class="swiper-button-next swiper-button-black"></div>
 				</div>
 			</div>
-			<div class="col-lg-3 d-flex mb-sm-4 animate">
-				<div class="home-services">
-						<div class="img mb-2" style="background-image: url(images/latest/homepage/services/waxing.jpg);"></div>
-						<div class="info text-center">
-							<h3><a href="teacher-single.html">Waxing</a></h3>
-							<div class="text">
-							<p> We offer a high standard of waxing treatments for the legs, arms, eyebrows. We guarantee a smooth and clean finish every time.
-
-								</p>
-						</div>
-						<a href="#" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
-						</div>
-				</div>
-			</div>
-			<div class="col-lg-3 d-flex mb-sm-4 animate">
-				<div class="home-services">
-						<div class="img mb-2" style="background-image: url(images/latest/homepage/services/laser-hair-removal.jpg);"></div>
-						<div class="info text-center">
-							<h3><a href="teacher-single.html">Cosmetic Treatments</a></h3>
-							<div class="text">
-							<p>We provides a full range of non-surgical cosmetic procedures specialising in the most advanced laser and aesthetic treatments </p>
-						</div>
-						<a href="#" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
-						</div>
-				</div>
-			</div>
-			<div class="col-lg-3 d-flex mb-sm-4 animate">
-				<div class="home-services">
-						<div class="img mb-2" style="background-image:url(images/latest/homepage/services/skin-tag-removal.jpg);"></div>
-						<div class="info text-center">
-							<h3><a href="teacher-single.html">Advanced Electrolysis Procedures</a></h3>
-							<div class="text">
-							<p>From skin tags, hair in mole to blood spots, My Skin Essentia removes unwated blemishes.</p>
-						</div>
-						<a href="#" class="btn btn-white btn-outline-black px-4 py-2">Find out More</a>
-						</div>
-				</div>
-			</div>
+				<!-- Services Swiper end -->
         </div>
       </div>
 	</section>
@@ -337,7 +358,7 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="testimonial-card">
-									<h4 class="testimonial-content">Brilliant service, Tina was so helpful and experienced! So pleased with the result</h4>
+									<h4 class="testimonial-content">"Brilliant service, Tina was so helpful and experienced! So pleased with the result"</h4>
 									<h5 class="customer-name">Lucy</h5>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -348,7 +369,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="testimonial-card">
-									<h4 class="testimonial-content">I recently had a treatment for Laser hair reduction. I have to say the results were fantastic.</h4>
+									<h4 class="testimonial-content">"I recently had a treatment for Laser hair reduction. I have to say the results were fantastic."</h4>
 									<h5 class="customer-name">Reachal</h5>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -359,7 +380,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="testimonial-card">
-									<h4 class="testimonial-content">Tina is really friendly and happy to chat about different options and treatments. Great eyebrow wax, really happy with it.</h4>
+									<h4 class="testimonial-content">"Tina is really friendly and happy to chat about different options and treatments. Great eyebrow wax, really happy with it."</h4>
 									<h5 class="customer-name">Ratha Lehall</h5>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -371,7 +392,7 @@
 							
 							<div class="swiper-slide">
 								<div class="testimonial-card">
-									<h4 class="testimonial-content">Tina is really friendly and happy to chat about different options and treatments. Great eyebrow wax, really happy with it.</h4>
+									<h4 class="testimonial-content">"Tina is really friendly and happy to chat about different options and treatments. Great eyebrow wax, really happy with it."</h4>
 									<h5 class="customer-name">Ratha Lehall</h5>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -382,7 +403,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="testimonial-card">
-									<h4 class="testimonial-content">Therapist is lovely and friendly, treatment left my skin very soft too!</h4>
+									<h4 class="testimonial-content">"Therapist is lovely and friendly, treatment left my skin very soft too!"</h4>
 									<h5 class="customer-name">Anonymous</h5>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -393,7 +414,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="testimonial-card">
-									<h4 class="testimonial-content">Tina is a very lovely lady she knows exactly what she is doing and guides you through every step. I can highly recommend Tina</h4>
+									<h4 class="testimonial-content">"Tina is a very lovely lady she knows exactly what she is doing and guides you through every step. I can highly recommend Tina"</h4>
 									<h5 class="customer-name">Barbara</h5>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -571,20 +592,59 @@
 	 <script src="js/swiper.min.js"></script>
 	 <!-- Initialize Swiper -->
 	 <script>
-		 var swiper = new Swiper('.swiper-container', {
-			 navigation: {
-				 nextEl: '.swiper-button-next',
-				 prevEl: '.swiper-button-prev',
-			 },
-			 autoplay:true,
-			 loop:true,
-			 speed: 1000,
-			 effect: 'fade',
-		 });
-
-		//  $(document).ready(function() { 
-		// 	$('.booking-form').css('display','block');
-		// })
+		 	var mySwiper = new Swiper ('.generic-swiper', {
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: true,
+				},
+				preventClicks:false,
+				preventClicksPropagation:false,
+				slidesPerView: 3.2,
+				spaceBetween: 30,
+				breakpoints: {
+				// 1024: {
+				// 	slidesPerView: 2.2,
+				// 	spaceBetween: 30,
+				// },
+				// 768: {
+				// 	slidesPerView: 2.2,
+				// 	spaceBetween: 30,
+				// },
+				// 640: {
+				// 	slidesPerView: 1.2,
+				// 	spaceBetween: 20,
+				// },
+				// 320: {
+				// 	slidesPerView: 1.2,
+				// 	spaceBetween: 10,
+				// }
+				},
+				pagination: {
+				el: '.generic-swiper-pagination',
+				clickable: true,
+				},
+				// Navigation arrows
+				navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+				},
+				on: {
+					click: function () {
+						window.location.href = $('.generic-swiper .swiper-slide')[this.clickedIndex].dataset.link;
+					}
+				}
+			})
+			
+			var swiper = new Swiper(".home-landing", {
+				navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+				},
+				autoplay: true,
+				loop: true,
+				speed: 1000,
+				// effect: "fade"
+			});
 	 </script>
 
   <script src="js/main.js"></script>

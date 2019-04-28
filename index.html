@@ -389,18 +389,6 @@
 									<span class="fa fa-star checked"></span>
 								</div>
 							</div>
-							
-							<div class="swiper-slide">
-								<div class="testimonial-card">
-									<h4 class="testimonial-content">"Tina is really friendly and happy to chat about different options and treatments. Great eyebrow wax, really happy with it."</h4>
-									<h5 class="customer-name">Ratha Lehall</h5>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-								</div>
-							</div>
 							<div class="swiper-slide">
 								<div class="testimonial-card">
 									<h4 class="testimonial-content">"Therapist is lovely and friendly, treatment left my skin very soft too!"</h4>
@@ -601,24 +589,6 @@
 				preventClicksPropagation:false,
 				slidesPerView: 3,
 				spaceBetween: 30,
-				breakpoints: {
-				// 1024: {
-				// 	slidesPerView: 2.2,
-				// 	spaceBetween: 30,
-				// },
-				// 768: {
-				// 	slidesPerView: 2.2,
-				// 	spaceBetween: 30,
-				// },
-				// 640: {
-				// 	slidesPerView: 1.2,
-				// 	spaceBetween: 20,
-				// },
-				// 320: {
-				// 	slidesPerView: 1.2,
-				// 	spaceBetween: 10,
-				// }
-				},
 				pagination: {
 				el: '.generic-swiper-pagination',
 				clickable: true,
@@ -641,6 +611,15 @@
 				prevEl: ".swiper-button-prev"
 				},
 				autoplay: true,
+				loop: true,
+				speed: 1000,
+				// effect: "fade"
+			});
+			var swiper = new Swiper(".home-testimonials", {
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: true,
+				},
 				loop: true,
 				speed: 1000,
 				// effect: "fade"

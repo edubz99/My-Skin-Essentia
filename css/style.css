@@ -7757,9 +7757,11 @@ body {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 1.6em;
-    padding: 0 15px; }
+    padding: 0px; }
   .priceList-container p {
-    padding: 0 15px; }
+    padding: 0;
+    margin: 0 0 10px;
+    line-height: 22px !important; }
   .priceList-container .col-xs-12 {
     margin-top: 15px;
     margin-bottom: 15px; }
@@ -7796,7 +7798,7 @@ body {
       .priceList-container table.prices-table td.rightCol {
         width: 20%;
         font-size: 0.9em;
-        text-align: right; }
+        text-align: center; }
       .priceList-container table.prices-table td.Col4 {
         width: 25%; }
     .priceList-container table.prices-table tr {
@@ -7805,7 +7807,7 @@ body {
       .priceList-container table.prices-table tr:nth-child(even) {
         background: rgba(223, 194, 179, 0.1); }
       .priceList-container table.prices-table tr td {
-        padding: 9px 15px; }
+        padding: 9px 10px; }
 
 @media all and (max-width: 500px) {
   section.priceList-container table.prices-table tr td {

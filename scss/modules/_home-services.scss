@@ -47,16 +47,28 @@
       margin: 0 auto;
       transform: scale(1);
       @include transition(0.3s);
-      @include media-breakpoint-up(md) {
-        width: 100%;
-        height: 200px;
-        @include border-radius(0px);
-      }
+
       @include media-breakpoint-up(lg) {
         width: 100%;
         height: 200px;
         @include border-radius(0px);
       }
+    }
+  }
+}
+.book-now {
+  @include media-breakpoint-up(md) {
+    margin-top: 20px;
+    margin-right: 108px;
+  }
+  a {
+    font-size: 14px;
+    font-weight: 400;
+    &:hover {
+      text-decoration: underline;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
     }
   }
 }

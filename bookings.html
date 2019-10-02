@@ -63,8 +63,7 @@
   <div class="header-top-wrapper">
     <div class="header-top">
       <div class="address">
-        <a href="https://www.google.com/maps?ll=51.525554,-0.434764&z=19&t=m&hl=en-GB&gl=US&mapclient=apiv3&cid=12340018619368807140"
-          target="_blank">Zipandas Hair, 1302 Uxbridge Road, Hayes, London, UB4 8JG</a>
+        <a href="https://goo.gl/maps/QN6MQST4LKpU7fAYA" target="_blank">Lancaster Hotel & Spa, Kingston Ln, London, Uxbridge, UB8 3PH</a>
       </div>
       <div class="cta">
         <a href="tel:0121 3456789">07909337292</a>
@@ -190,8 +189,8 @@
           <div class="footer-widget mb-4">
             <h2 class="heading-2">About Us</h2>
             <p>
-              Located within Zipandas Hair Salon in Hayes, Skin Essentia offers a range of different advanced beauty treatments in a beauty
-              room run by experienced beautician Tina.
+              Located within Lancaster hotel & Spa, within close proximity to Brunel University London. Skin Essentia offers a range of
+              different advanced beauty treatments in a beauty room run by experienced beautician Tina.
             </p>
             <ul class="footer-social list-unstyled float-md-left float-lft mt-5">
               <li class="animate">
@@ -214,7 +213,7 @@
               <ul>
                 <li>
                   <span class="icon icon-map-marker"></span>
-                  <span class="text">Zipandas Hair Studio, 1302 Uxbridge Rd, Hayes, UB4 8JG, UK
+                  <span class="text">Lancaster Hotel & Spa, Kingston Ln, London, Uxbridge, UB8 3PH
                   </span>
                 </li>
                 <li>
@@ -234,7 +233,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3256279745056!2d-0.4369706841846192!3d51.52558707963805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766d9ab8d3fd59%3A0xab408d8dd92f1ae4!2sZipandas+Hair+Studio!5e0!3m2!1sen!2suk!4v1553981832596!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3256279745056!2d-0.4369706841846192!3d51.52558707963805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766d9ab8d3fd59%3A0xab408d8dd92f1ae4!2sLancasterHotel+Hair+Studio!5e0!3m2!1sen!2suk!4v1553981832596!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
           <div id="map"></div>
         </div>
       </div>
@@ -261,10 +260,10 @@
     <script>
       function initMap() {
         // Styles a map in night mode.
-        var zipandas = { lat: 51.525601, lng: -0.43478 };
+        var lancasterHotel = { lat: 51.534994, lng: -0.471319 };
         var map = new google.maps.Map(document.getElementById("map"), {
           zoom: 17,
-          center: zipandas,
+          center: lancasterHotel,
           styles: [
             { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
             {
@@ -352,8 +351,8 @@
             }
           ]
         });
-        // The marker, positioned at zipandas
-        var marker = new google.maps.Marker({ position: zipandas, map: map });
+        // The marker, positioned at LancasterHotel
+        var marker = new google.maps.Marker({ position: lancasterHotel, map: map });
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAII5Pa9bUvc4J5TYj0YAJj-FRPHHKtcGM&callback=initMap" async

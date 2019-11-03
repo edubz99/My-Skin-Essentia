@@ -7625,7 +7625,8 @@ body {
               flex-direction: column;
               -ms-flex-wrap: nowrap;
               flex-wrap: nowrap;
-              max-width: 247px; } }
+              max-width: 247px;
+              min-height: 482px; } }
           .generic-swiper-wrapper .generic-swiper .swiper-wrapper .swiper-slide .home-services .card-image {
             background: #d2d2d2;
             position: relative;

@@ -120,6 +120,10 @@
   // Opinionated: add "hand" cursor to non-disabled .navbar-toggler elements
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 12px;
   }
 }
 

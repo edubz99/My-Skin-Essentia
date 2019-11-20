@@ -4,7 +4,9 @@
 @import "modules/modules";
 @import "pages/pages";
 
-$font-primary: "Montserrat", Arial, sans-serif;
+$font-primary: "Montserrat",
+Arial,
+sans-serif;
 
 $white: #fff;
 $black: #000;
@@ -31,6 +33,7 @@ html {
   // overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 body {
   font-family: $font-primary;
   background: $white;
@@ -38,6 +41,7 @@ body {
   line-height: 1.8;
   font-weight: 300;
   color: lighten($black, 50%);
+
   &.menu-show {
     overflow: hidden;
     position: fixed;
@@ -45,17 +49,21 @@ body {
     width: 100%;
   }
 }
+
 span {
   color: lighten($black, 75%);
 }
+
 a {
   transition: 0.3s all ease;
   color: $primary;
+
   &:hover {
     text-decoration: none;
     color: $primary;
   }
 }
+
 h1,
 h2,
 h3,
@@ -79,6 +87,7 @@ h5,
   background: lighten($black, 99%) !important;
   z-index: 3;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.07);
+
   @include media-breakpoint-down(md) {
     background: $black !important;
     position: relative;
@@ -86,14 +95,15 @@ h5,
 
   .navbar-brand {
     color: $white;
+
     @include media-breakpoint-up(lg) {
       color: $black;
     }
   }
 
   .navbar-nav {
-    > .nav-item {
-      > .nav-link {
+    >.nav-item {
+      >.nav-link {
         font-size: 13px;
         padding-top: 0.9rem;
         padding-bottom: 0.9rem;
@@ -102,6 +112,7 @@ h5,
         color: rgba(255, 255, 255, 0.9);
         font-weight: 400;
         text-transform: uppercase;
+
         @include media-breakpoint-up(lg) {
           padding-top: 1.5rem;
           padding-bottom: 1.5rem;
@@ -109,9 +120,11 @@ h5,
           padding-right: 20px;
           color: rgba(0, 0, 0, 0.7);
         }
+
         &:hover {
           color: $primary;
         }
+
         opacity: 1 !important;
       }
 
@@ -127,10 +140,12 @@ h5,
         position: relative;
         margin-left: 20px;
         padding-left: 20px;
+
         @include media-breakpoint-down(md) {
           padding-left: 0;
           margin-left: 0;
         }
+
         &:before {
           position: absolute;
           content: "";
@@ -139,16 +154,19 @@ h5,
           left: 0;
           width: 2px;
           background: rgba($white, 0.05);
+
           @include media-breakpoint-down(md) {
             display: none;
           }
         }
       }
+
       &.cta {
         @include media-breakpoint-down(sm) {
           margin-bottom: 20px;
         }
-        > a {
+
+        >a {
           color: $white;
           border: 1px solid $primary;
           background: $primary;
@@ -158,28 +176,33 @@ h5,
           padding-right: 20px;
           margin-top: 4px;
           @include border-radius(30px);
+
           span {
             display: inline-block;
             color: $white;
           }
+
           &:hover {
             background: $primary;
             border: 1px solid $primary;
           }
         }
+
         &.cta-colored {
           span {
             border-color: $primary;
           }
         }
       }
+
       &.active {
-        > a {
+        >a {
           color: $primary;
         }
       }
     }
   }
+
   .navbar-toggler {
     border: none;
     color: rgba(255, 255, 255, 0.5) !important;
@@ -188,6 +211,11 @@ h5,
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 0.1em;
+    display: none;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
 
   &.scrolled {
@@ -198,14 +226,16 @@ h5,
     margin-top: -130px;
     background: $white !important;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
     .nav-item {
       &.active {
-        > a {
+        >a {
           color: $primary !important;
         }
       }
+
       &.cta {
-        > a {
+        >a {
           color: $white !important;
           background: $primary;
           border: none !important;
@@ -215,11 +245,13 @@ h5,
           padding-right: 20px;
           margin-top: 6px !important;
           @include border-radius(30px);
+
           span {
             display: inline-block;
             color: $white !important;
           }
         }
+
         &.cta-colored {
           span {
             border-color: $primary;
@@ -255,18 +287,22 @@ h5,
       font-size: 16px;
       letter-spacing: 0.1em;
     }
+
     .nav-link {
       padding-top: 0.9rem !important;
       padding-bottom: 0.9rem !important;
       color: $black !important;
+
       &.active {
         color: $primary !important;
       }
     }
+
     &.awake {
       margin-top: 0px;
       transition: 0.3s all ease-out;
     }
+
     &.sleep {
       transition: 0.3s all ease-out;
     }
@@ -283,12 +319,14 @@ h5,
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 1;
+
   small {
     font-size: 10px;
     letter-spacing: 6px;
     font-weight: 700;
     color: $primary;
   }
+
   i {
     color: $primary;
     font-size: 30px;
@@ -304,9 +342,11 @@ h5,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
   @include media-breakpoint-down(md) {
     background-position: center center !important;
   }
+
   .overlay {
     position: absolute;
     top: 0;
@@ -322,8 +362,10 @@ h5,
 .slider-text {
   color: $white;
   height: 700px;
+
   .icon {
     margin-bottom: 30px;
+
     span {
       line-height: 0;
       font-size: 80px;
@@ -331,57 +373,70 @@ h5,
       display: inline-block;
       margin-bottom: 10px;
     }
+
     .logo {
       h1 {
         font-size: 38px;
       }
     }
   }
+
   h1 {
     font-size: 60px;
     color: $white;
     line-height: 1.2;
     font-weight: 400;
     text-transform: uppercase;
+
     @include media-breakpoint-down(md) {
       font-size: 40px;
     }
   }
+
   p {
     font-size: 20px;
     line-height: 1.5;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
+
     a {
       color: $white;
       border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+
       span {
         color: $white;
       }
     }
   }
+
   .breadcrumbs {
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 1px;
     margin-bottom: 20px;
     z-index: 99;
+
     span {
       border-bottom: 2px solid rgba(255, 255, 255, 0.1);
       color: rgba(255, 255, 255, 0.7);
+
       a {
         color: $white;
       }
     }
   }
+
   .bread {
     font-weight: 400 !important;
   }
+
   .btn-outline-white {
     border: 1px solid rgba(255, 255, 255, 0.4) !important;
+
     span {
       color: $white;
     }
+
     &:hover {
       span {
         color: $primary;
@@ -393,8 +448,10 @@ h5,
 //OWL CAROUSEL
 .owl-carousel {
   position: relative;
+
   .owl-item {
     opacity: 0.4;
+
     &.active {
       opacity: 1;
     }
@@ -404,6 +461,7 @@ h5,
     position: absolute;
     top: 50%;
     width: 100%;
+
     .owl-prev,
     .owl-next {
       position: absolute;
@@ -411,22 +469,28 @@ h5,
       margin-top: -10px;
       color: $primary !important;
       @include transition(0.7s);
+
       span {
         &:before {
           font-size: 30px;
         }
       }
+
       opacity: 0;
     }
+
     .owl-prev {
       left: 0;
     }
+
     .owl-next {
       right: 0;
     }
   }
+
   .owl-dots {
     text-align: center;
+
     .owl-dot {
       width: 10px;
       height: 10px;
@@ -434,6 +498,7 @@ h5,
       border-radius: 50%;
       background: lighten($black, 90%);
       position: relative;
+
       &:after {
         position: absolute;
         top: -2px;
@@ -446,30 +511,37 @@ h5,
         border: 1px solid lighten($black, 90%);
         @include border-radius(50%);
       }
+
       &.active {
         background: lighten($black, 60%);
       }
     }
   }
+
   &:hover {
     .owl-nav {
+
       .owl-prev,
       .owl-next {
         opacity: 1;
       }
+
       .owl-prev {
         left: -25px;
       }
+
       .owl-next {
         right: -25px;
       }
     }
   }
 }
+
 .owl-custom-nav {
   float: right;
   position: relative;
   z-index: 10;
+
   .owl-custom-prev,
   .owl-custom-next {
     padding: 10px;
@@ -502,24 +574,29 @@ h5,
   @include border-radius(30px);
   box-shadow: none !important;
   font-size: 13px;
+
   &:hover,
   &:active,
   &:focus {
     outline: none;
   }
+
   &.btn-primary {
     background: lighten($primary, 0);
     border: 1px solid lighten($primary, 0);
     color: $white;
+
     &:hover {
       border: 1px solid $primary;
       background: transparent !important;
       color: $primary;
     }
+
     &.btn-outline-primary {
       border: 1px solid $primary;
       background: transparent;
       color: $primary;
+
       &:hover {
         border: 1px solid transparent;
         background: $primary;
@@ -527,20 +604,24 @@ h5,
       }
     }
   }
+
   &.btn-white {
     background: $white;
     border: 1px solid $white;
     color: $black;
+
     &:hover {
       border: 1px solid $black;
       background: $black;
       color: $white;
     }
+
     &.btn-outline-white {
       border-color: rgba($white, 0.8);
       background: none;
       border-width: 1px;
       color: $white;
+
       &:hover,
       &:focus,
       &:active {
@@ -550,11 +631,13 @@ h5,
       }
     }
   }
+
   &.btn-outline-black {
     border-color: rgba($black, 1);
     background: none;
     border-width: 1px;
     color: $black;
+
     &:hover,
     &:focus,
     &:active {
@@ -574,13 +657,14 @@ h5,
       color: $primary;
     }
   }
+
   h3 {
     font-size: 15px;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
-  .media-body {
-  }
+
+  .media-body {}
 }
 
 //WORK ENTRY
@@ -588,21 +672,25 @@ h5,
   span {
     a {
       color: lighten($black, 70%);
+
       &.active {
         color: $black;
       }
     }
   }
 }
+
 .work-entry {
   display: block;
   width: 100%;
   position: relative;
+
   @include media-breakpoint-up(md) {
     margin-bottom: 30px;
   }
-  .img {
-  }
+
+  .img {}
+
   .info {
     position: absolute;
     bottom: 0;
@@ -611,31 +699,37 @@ h5,
     top: 0;
     opacity: 0;
     @include transition(0.3s);
+
     @include media-breakpoint-down(sm) {
       opacity: 1;
     }
-    > div {
+
+    >div {
       display: block;
       width: 100%;
       text-align: center;
     }
+
     h3 {
       color: $white;
       margin-bottom: 0;
       font-weight: 300;
       font-size: 20px;
     }
+
     .icon {
       width: 50px;
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       margin: 0 auto;
       @include border-radius(50%);
+
       span {
         color: $white;
       }
     }
   }
+
   &:hover {
     .info {
       opacity: 1;
@@ -648,10 +742,12 @@ h5,
   padding: 2em 0;
   margin: 0px 0 100px 0;
 }
+
 .testimonial {
   .testimonial-entry {
     opacity: 0.3;
     @include transition(0.3s);
+
     &:hover {
       opacity: 1;
     }
@@ -663,52 +759,65 @@ h5,
   border: 1px solid lighten($black, 94%);
   position: relative;
   @include transition(0.3s);
+
   @include media-breakpoint-down(sm) {
     margin-bottom: 4em;
   }
-  > div {
+
+  >div {
     padding: 20px;
+
     p {
       margin-bottom: 0;
     }
   }
+
   h3 {
     font-size: 14px;
     text-transform: uppercase;
   }
+
   p {
     .price {
       font-weight: 400;
       font-size: 20px;
       color: $primary;
     }
+
     .per {
       font-size: 12px;
     }
   }
+
   ul {
     margin: 0;
     padding: 0;
+
     li {
       list-style: none;
       padding: 10px 20px;
+
       &:nth-child(odd) {
         background: lighten($black, 98%);
       }
     }
   }
+
   .button {
     position: absolute;
     bottom: -26px;
     left: 0;
     right: 0;
     margin-bottom: 0;
+
     .btn {
       @include border-radius(30px);
+
       &.btn-outline-primary {
         background: $white;
         border: 1px solid lighten($black, 94%);
         color: lighten($black, 80%);
+
         &:hover,
         &:focus {
           background: $white !important;
@@ -716,9 +825,11 @@ h5,
       }
     }
   }
+
   &:hover,
   &:focus {
     border: 1px solid $primary;
+
     .button {
       .btn {
         &.btn-outline-primary {
@@ -729,8 +840,10 @@ h5,
       }
     }
   }
+
   &.active {
     border: 1px solid $primary;
+
     .button {
       .btn {
         &.btn-outline-primary {
@@ -742,10 +855,12 @@ h5,
     }
   }
 }
-#appointment-booking {
-}
+
+#appointment-booking {}
+
 .appointment {
   background: #252525;
+
   .overlay {
     position: absolute;
     top: 0;
@@ -755,10 +870,12 @@ h5,
     background: #252525;
     opacity: 1;
   }
+
   @media (min-width: 768px) {
     margin: 7em 0;
   }
 }
+
 .appointment-info {
   width: 100%;
   display: block;
@@ -767,46 +884,57 @@ h5,
   -webkit-box-shadow: 0px 5px 71px -27px rgba(0, 0, 0, 0.21);
   -moz-box-shadow: 0px 5px 71px -27px rgba(0, 0, 0, 0.21);
   box-shadow: 0px 5px 71px -27px rgba(0, 0, 0, 0.21);
+
   @include media-breakpoint-down(sm) {
     margin-bottom: 40px;
   }
+
   span {
     color: rgba(255, 255, 255, 0.9);
   }
+
   .day {
     margin-bottom: 0;
   }
+
   h3 {
     font-size: 20px;
     color: $white;
   }
 }
+
 .appointment {
   h3 {
     color: $white;
   }
 }
+
 .appointment-form {
   .form-group {
     position: relative;
+
     .icon {
       position: absolute;
       top: 50% !important;
       right: 0;
       font-size: 14px;
       transform: translateY(-50%);
+
       span {
         color: rgba(255, 255, 255, 1) !important;
       }
     }
+
     .select-wrap,
     .input-wrap {
       position: relative;
+
       select {
         appearance: none;
       }
     }
   }
+
   .form-control {
     border: transparent !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
@@ -819,27 +947,33 @@ h5,
     // font-weight: 400;
     border-radius: 0px;
     box-shadow: none !important;
+
     &::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       color: rgba(255, 255, 255, 0.9);
     }
+
     &::-moz-placeholder {
       /* Firefox 19+ */
       color: rgba(255, 255, 255, 0.9);
     }
+
     &:-ms-input-placeholder {
       /* IE 10+ */
       color: rgba(255, 255, 255, 0.9);
     }
+
     &:-moz-placeholder {
       /* Firefox 18- */
       color: rgba(255, 255, 255, 0.9);
     }
+
     &:focus,
     &:active {
       border-color: $white;
     }
   }
+
   textarea.form-control {
     height: inherit !important;
   }
@@ -847,6 +981,7 @@ h5,
 
 .discount {
   position: relative;
+
   .overlay {
     position: absolute;
     top: 0;
@@ -857,18 +992,22 @@ h5,
     opacity: 0;
   }
 }
+
 .discount {
   color: rgba(255, 255, 255, 0.8);
+
   h3 {
     color: $white;
     margin-bottom: 0;
     font-size: 24px;
   }
+
   h2 {
     font-size: 40px;
     color: $white;
     text-transform: uppercase;
   }
+
   p {
     font-size: 16px;
   }
@@ -882,6 +1021,7 @@ h5,
     margin-right: 2px;
     background: lighten($primary, 40%);
     @include border-radius(50%);
+
     span {
       color: $primary;
     }
@@ -896,25 +1036,31 @@ h5,
   font-size: 18px;
   border-radius: 0px;
   box-shadow: none !important;
+
   &:focus,
   &:active {
     border-color: $black;
   }
 }
+
 textarea.form-control {
   height: inherit !important;
 }
+
 .vh-100 {
   height: 100vh;
+
   @include media-breakpoint-down(lg) {
     height: inherit;
     padding-top: 5em;
     padding-bottom: 5em;
   }
 }
+
 .vh-75 {
   height: 75vh;
   min-height: 700px;
+
   @include media-breakpoint-down(lg) {
     min-height: 700px;
     height: inherit;
@@ -927,20 +1073,24 @@ textarea.form-control {
   padding: 0;
   margin: 0;
   display: inline-block !important;
+
   @include media-breakpoint-down(sm) {
     display: block !important;
     margin-bottom: 10px;
     width: 100% !important;
   }
+
   li {
     padding: 0;
     margin: 0 5px;
     display: inline-block !important;
+
     @include media-breakpoint-down(sm) {
       display: block !important;
       margin-bottom: 10px;
       width: 100% !important;
     }
+
     a {
       text-transform: uppercase;
       font-size: 14px;
@@ -948,6 +1098,7 @@ textarea.form-control {
       color: #ccc;
       border: 2px solid #ccc;
       border-radius: 0 !important;
+
       &.active {
         background: none !important;
         color: darken(#ccc, 100%) !important;
@@ -965,6 +1116,7 @@ textarea.form-control {
 .bg-primary {
   background: $primary !important;
 }
+
 .section {
   .sub-title {
     font-size: 16px;
@@ -974,6 +1126,7 @@ textarea.form-control {
     font-family: $font-family-sans-serif;
     font-weight: 300;
   }
+
   .primary-title {
     margin-top: 0;
     margin-bottom: 30px;
@@ -982,20 +1135,21 @@ textarea.form-control {
 
 //ABOUT
 .about-author {
-  img {
-  }
+  img {}
+
   .desc {
     h3 {
       font-size: 24px;
     }
   }
-  .bio {
-  }
+
+  .bio {}
 }
 
 .section {
   padding: 7em 0;
   position: relative;
+
   @include media-breakpoint-down(sm) {
     padding: 6em 0;
   }
@@ -1009,13 +1163,16 @@ textarea.form-control {
   font-size: 16px;
   padding: 3em 0;
   background: #252525;
+
   &.contact {
     padding: 1em 0;
   }
+
   .footer-logo {
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
+
   .footer-widget {
     h2 {
       font-weight: normal;
@@ -1026,6 +1183,7 @@ textarea.form-control {
       position: relative;
       text-transform: uppercase;
       letter-spacing: 1px;
+
       &:after {
         position: absolute;
         bottom: -15px;
@@ -1036,6 +1194,7 @@ textarea.form-control {
         background: $white;
       }
     }
+
     ul {
       li {
         a {
@@ -1045,36 +1204,45 @@ textarea.form-control {
         }
       }
     }
+
     .btn-primary {
       background: $white !important;
       border: 2px solid $white !important;
+
       &:hover {
         background: $white;
         border: 2px solid $white !important;
       }
     }
   }
+
   p {
     color: rgba($white, 0.7);
   }
+
   a {
     color: rgba($white, 0.7);
+
     &:hover {
       color: $white;
     }
   }
+
   .heading-2 {
     font-size: 17px;
     font-weight: 400;
     color: $black;
   }
+
   .block-21 {
     .text {
       .heading {
         font-size: 16px;
         font-weight: 300;
+
         a {
           color: rgba(255, 255, 255, 0.9);
+
           &:hover,
           &:active,
           &:focus {
@@ -1082,11 +1250,13 @@ textarea.form-control {
           }
         }
       }
+
       .meta {
-        > div {
+        >div {
           display: inline-block;
           font-size: 12px;
           margin-right: 5px;
+
           a {
             color: lighten($black, 50%);
           }
@@ -1094,6 +1264,7 @@ textarea.form-control {
       }
     }
   }
+
   .credits {
     display: none !important;
   }
@@ -1104,6 +1275,7 @@ textarea.form-control {
     list-style: none;
     margin: 0 10px 0 0;
     display: inline-block;
+
     a {
       height: 50px;
       width: 50px;
@@ -1112,6 +1284,7 @@ textarea.form-control {
       background: rgba($white, 0.05);
       border-radius: 50%;
       position: relative;
+
       span {
         position: absolute;
         font-size: 26px;
@@ -1119,6 +1292,7 @@ textarea.form-control {
         left: 50%;
         transform: translate(-50%, -50%);
       }
+
       &:hover {
         color: $white;
       }
@@ -1131,6 +1305,7 @@ textarea.form-control {
 #map {
   height: 500px;
   width: 100%;
+
   @include media-breakpoint-down(md) {
     height: 300px;
   }
@@ -1140,22 +1315,27 @@ textarea.form-control {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba($primary, 0.4);
   }
+
   70% {
     -webkit-box-shadow: 0 0 0 30px rgba($primary, 0);
   }
+
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba($primary, 0);
   }
 }
+
 @keyframes pulse {
   0% {
     -moz-box-shadow: 0 0 0 0 rgba($primary, 0.4);
     box-shadow: 0 0 0 0 rgba($primary, 0.4);
   }
+
   70% {
     -moz-box-shadow: 0 0 0 30px rgba($primary, 0);
     box-shadow: 0 0 0 30px rgba($primary, 0);
   }
+
   100% {
     -moz-box-shadow: 0 0 0 0 rgba($primary, 0);
     box-shadow: 0 0 0 0 rgba($primary, 0);
@@ -1168,22 +1348,27 @@ textarea.form-control {
     display: block;
     margin-bottom: 10px;
   }
+
   h2 {
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
+
     @include media-breakpoint-down(sm) {
       font-size: 28px;
     }
   }
+
   &.heading-section-white {
     .subheading {
       color: rgba(255, 255, 255, 0.9);
     }
+
     h2 {
       font-size: 20px;
       color: $white;
     }
+
     p {
       color: rgba(255, 255, 255, 0.9);
     }
@@ -1214,6 +1399,7 @@ textarea.form-control {
   cursor: -moz-zoom-in;
   cursor: zoom-in;
 }
+
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
@@ -1227,6 +1413,7 @@ textarea.form-control {
 .mfp-with-zoom.mfp-ready .mfp-container {
   opacity: 1;
 }
+
 .mfp-with-zoom.mfp-ready.mfp-bg {
   opacity: 0.8;
 }
@@ -1240,6 +1427,7 @@ textarea.form-control {
 #section-counter {
   position: relative;
   z-index: 0;
+
   .overlay {
     position: absolute;
     top: 0;
@@ -1253,6 +1441,7 @@ textarea.form-control {
 
 .counter {
   padding: 10em 0;
+
   .icon {
     width: 100px;
     height: 100px;
@@ -1262,6 +1451,7 @@ textarea.form-control {
     border: 1px solid lighten($black, 94%);
     margin-bottom: 20px;
     @include border-radius(50%);
+
     span {
       position: absolute;
       top: 50%;
@@ -1271,27 +1461,32 @@ textarea.form-control {
       color: $primary !important;
     }
   }
+
   .text {
     strong.number {
       font-weight: 400;
       font-size: 30px;
       color: $primary;
     }
+
     span {
       font-weight: 400;
       font-size: 14px;
       color: rgba(0, 0, 0, 0.7);
     }
   }
+
   .counter-wrap {
     @include media-breakpoint-down(sm) {
       margin-bottom: 40px;
     }
   }
+
   .number {
     display: block;
     color: $primary;
   }
+
   .label {
     font-size: 12px;
     text-transform: uppercase;
@@ -1310,23 +1505,30 @@ textarea.form-control {
   width: 100%;
   height: 270px;
 }
+
 .blog-entry {
   background: $white;
   overflow: hidden;
+
   @include media-breakpoint-up(md) {
     margin-bottom: 30px;
   }
+
   @include media-breakpoint-down(sm) {
     margin-bottom: 30px;
   }
+
   .text {
     position: relative;
+
     .heading {
       font-size: 18px;
       margin-bottom: 16px;
       font-weight: 400;
+
       a {
         color: $black;
+
         &:hover,
         &:focus,
         &:active {
@@ -1335,15 +1537,18 @@ textarea.form-control {
       }
     }
   }
+
   .meta {
-    > div {
+    >div {
       display: inline-block;
       margin-right: 5px;
       margin-bottom: 0;
       font-size: 14px;
+
       a {
         color: lighten($black, 50%);
         font-size: 15px;
+
         &:hover {
           color: lighten($black, 40%);
         }
@@ -1355,21 +1560,26 @@ textarea.form-control {
 .block-23 {
   ul {
     padding: 0;
+
     li {
+
       &,
-      > a {
+      >a {
         display: table;
         line-height: 1.5;
         margin-bottom: 15px;
       }
+
       span {
         color: rgba($white, 0.7);
       }
+
       .icon,
       .text {
         display: table-cell;
         vertical-align: top;
       }
+
       .icon {
         width: 35px;
         font-size: 18px;
@@ -1382,34 +1592,37 @@ textarea.form-control {
 
 .block-6 {
   margin-bottom: 40px;
+
   .icon {
     span {
-      &:before {
-      }
+      &:before {}
     }
   }
+
   .media-body {
-    .heading {
-    }
-    p {
-    }
+    .heading {}
+
+    p {}
   }
 }
 
 //### .block-18
 .block-18 {
+
   .icon,
-  .text {
-  }
+  .text {}
+
   .icon {
-    > span {
+    >span {
       font-size: 40px;
     }
   }
+
   .text {
     strong {
       font-size: 30px;
     }
+
     span {
       display: block;
     }
@@ -1421,10 +1634,12 @@ textarea.form-control {
   ul {
     padding: 0;
     margin: 0;
+
     li {
       display: inline-block;
       margin-bottom: 4px;
       font-weight: 400;
+
       a,
       span {
         color: $primary;
@@ -1436,7 +1651,9 @@ textarea.form-control {
         border-radius: 50%;
         border: 1px solid lighten($primary, 25%);
       }
+
       &.active {
+
         a,
         span {
           background: lighten($primary, 25%);
@@ -1452,10 +1669,11 @@ textarea.form-control {
   @include media-breakpoint-up(md) {
     padding: 6em 0;
   }
+
   .contact-info {
     p {
-      a {
-      }
+      a {}
+
       span {
         color: $black;
       }
@@ -1467,6 +1685,7 @@ textarea.form-control {
   .form-group {
     position: relative;
   }
+
   .form-control {
     border: transparent !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
@@ -1479,27 +1698,33 @@ textarea.form-control {
     // font-weight: 400;
     border-radius: 0px;
     box-shadow: none !important;
+
     &::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       color: rgba(0, 0, 0, 0.5);
     }
+
     &::-moz-placeholder {
       /* Firefox 19+ */
       color: rgba(0, 0, 0, 0.5);
     }
+
     &:-ms-input-placeholder {
       /* IE 10+ */
       color: rgba(0, 0, 0, 0.5);
     }
+
     &:-moz-placeholder {
       /* Firefox 18- */
       color: rgba(0, 0, 0, 0.5);
     }
+
     &:focus,
     &:active {
       border-color: $black !important;
     }
   }
+
   textarea.form-control {
     height: inherit !important;
   }
@@ -1511,8 +1736,8 @@ textarea.form-control {
     box-shadow: none !important;
     font-size: 15px;
   }
-  #map {
-  }
+
+  #map {}
 }
 
 //### .block-21
@@ -1522,12 +1747,16 @@ textarea.form-control {
     height: 80px;
     width: 80px;
   }
+
   .text {
     width: calc(100% - 100px);
+
     .heading {
       font-size: 16px;
+
       a {
         color: $black;
+
         &:hover,
         &:active,
         &:focus {
@@ -1535,11 +1764,13 @@ textarea.form-control {
         }
       }
     }
+
     .meta {
-      > div {
+      >div {
         display: inline-block;
         font-size: 12px;
         margin-right: 5px;
+
         a {
           color: lighten($black, 50%);
         }
@@ -1552,9 +1783,11 @@ textarea.form-control {
   width: 100%;
   text-align: center;
   display: inline-block;
+
   li {
     display: inline-block;
   }
+
   .prev,
   .next {
     a {
@@ -1562,6 +1795,7 @@ textarea.form-control {
       line-height: 38px !important;
     }
   }
+
   li,
   .prev,
   .next {
@@ -1574,6 +1808,7 @@ textarea.form-control {
       border-radius: 50% !important;
       font-size: 16px;
     }
+
     &.active {
       a {
         display: block;
@@ -1586,6 +1821,7 @@ textarea.form-control {
         font-size: 16px;
         background: $primary;
         color: $white;
+
         &:hover,
         &:focus {
           color: $white;
@@ -1593,9 +1829,11 @@ textarea.form-control {
       }
     }
   }
+
   .prev {
     float: left;
   }
+
   .next {
     float: right;
   }
@@ -1608,7 +1846,8 @@ textarea.form-control {
   font-weight: bold;
   color: $white;
   letter-spacing: 0.1em;
-  > div {
+
+  >div {
     display: inline-block;
 
     .seperator {
@@ -1630,6 +1869,7 @@ textarea.form-control {
     color: $black;
     border: 1px solid #ccc;
     font-size: 11px;
+
     &:hover {
       border: 1px solid #000;
     }
@@ -1643,12 +1883,14 @@ textarea.form-control {
 .comment-list {
   padding: 0;
   margin: 0;
+
   .children {
     padding: 50px 0 0 40px;
     margin: 0;
     float: left;
     width: 100%;
   }
+
   li {
     padding: 0;
     margin: 0 0 30px 0;
@@ -1656,26 +1898,32 @@ textarea.form-control {
     width: 100%;
     clear: both;
     list-style: none;
+
     .vcard {
       width: 80px;
       float: left;
+
       img {
         width: 50px;
         border-radius: 50%;
       }
     }
+
     .comment-body {
       float: right;
       width: calc(100% - 80px);
+
       h3 {
         font-size: 20px;
       }
+
       .meta {
         text-transform: uppercase;
         font-size: 13px;
         letter-spacing: 0.1em;
         color: #ccc;
       }
+
       .reply {
         padding: 5px 10px;
         background: lighten($black, 90%);
@@ -1685,6 +1933,7 @@ textarea.form-control {
         letter-spacing: 0.1em;
         font-weight: 400;
         border-radius: 4px;
+
         &:hover {
           color: $white;
           background: lighten($black, 0%);
@@ -1700,10 +1949,12 @@ textarea.form-control {
 
   .form-group {
     position: relative;
+
     input {
       padding-right: 50px;
     }
   }
+
   .icon {
     position: absolute;
     top: 50%;
@@ -1717,13 +1968,16 @@ textarea.form-control {
   padding: 20px;
   border: 1px solid lighten($black, 90%);
   margin-bottom: 30px;
+
   .heading {
     font-size: 18px;
     text-transform: uppercase;
   }
+
   .fields {
     width: 100%;
     position: relative;
+
     .form-control {
       box-shadow: none !important;
       border: transparent;
@@ -1735,23 +1989,28 @@ textarea.form-control {
       height: 52px !important;
       padding: 10px 20px;
       @include border-radius(0);
+
       &::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
         color: lighten($black, 30%);
       }
+
       &::-moz-placeholder {
         /* Firefox 19+ */
         color: lighten($black, 30%);
       }
+
       &:-ms-input-placeholder {
         /* IE 10+ */
         color: lighten($black, 30%);
       }
+
       &:-moz-placeholder {
         /* Firefox 18- */
         color: lighten($black, 30%);
       }
     }
+
     .icon {
       position: absolute;
       top: 50%;
@@ -1759,24 +2018,28 @@ textarea.form-control {
       font-size: 14px;
       transform: translateY(-50%);
       color: rgba($black, 0.7);
+
       @include media-breakpoint-down(sm) {
         right: 10px;
       }
     }
+
     .textfield-search,
-    .select-wrap {
-    }
+    .select-wrap {}
+
     .textfield-search {
-      input {
-      }
+      input {}
     }
+
     .select-wrap {
       position: relative;
+
       select {
         appearance: none;
       }
     }
   }
+
   .form-group {
     .btn {
       width: 100%;
@@ -1797,9 +2060,11 @@ textarea.form-control {
   float: left;
 
   background: $white;
+
   *:last-child {
     margin-bottom: 0;
   }
+
   h3 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -1814,13 +2079,16 @@ textarea.form-control {
     padding-bottom: 10px;
     border-bottom: 1px dotted gray("300");
     list-style: none;
+
     &:last-child {
       margin-bottom: 0;
       border-bottom: none;
       padding-bottom: 0;
     }
+
     a {
       display: block;
+
       span {
         position: absolute;
         right: 0;
@@ -1828,6 +2096,7 @@ textarea.form-control {
         color: #ccc;
       }
     }
+
     &.active {
       a {
         color: $black;
@@ -1898,10 +2167,12 @@ textarea.form-control {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
   }
+
   50% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -35px;
   }
+
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;

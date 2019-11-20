@@ -8007,6 +8007,9 @@ h5,
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 0.1em; }
+    @media (max-width: 991.98px) {
+      .navbar-light .navbar-toggler {
+        display: none; } }
   .navbar-light.scrolled {
     position: fixed;
     right: 0;

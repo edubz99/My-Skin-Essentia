@@ -8062,6 +8062,9 @@ h5,
       text-transform: uppercase;
       font-size: 16px;
       letter-spacing: 0.1em; }
+      @media (min-width: 768px) {
+        .navbar-light.scrolled .navbar-toggler {
+          display: none; } }
     .navbar-light.scrolled .nav-link {
       padding-top: 0.9rem !important;
       padding-bottom: 0.9rem !important;

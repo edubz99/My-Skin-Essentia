@@ -2186,3 +2186,16 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+.float-quote {
+  position: absolute;
+  bottom: 200px;
+  right: 40px;
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}

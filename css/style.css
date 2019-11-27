@@ -9380,3 +9380,17 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.float-quote {
+  position: absolute;
+  bottom: 200px;
+  right: 40px;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media (max-width: 767.98px) {
+    .float-quote {
+      display: none; } }

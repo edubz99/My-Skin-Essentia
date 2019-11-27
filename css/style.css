@@ -7477,12 +7477,14 @@ body {
       .swiper-container.home-landing .swiper-slide .landing-card {
         position: absolute;
         bottom: 50px;
-        right: 50px; } }
+        left: 50px;
+        max-width: 493px; } }
     @media (min-width: 992px) {
       .swiper-container.home-landing .swiper-slide .landing-card {
         position: absolute;
         bottom: 50px;
-        right: 50px; } }
+        left: 50px;
+        max-width: 570px; } }
     .swiper-container.home-landing .swiper-slide .landing-card h1 {
       font-size: 1.8rem; }
       @media (min-width: 768px) {

@@ -243,6 +243,75 @@
 
 
     <section class="section bg-light mb-5 p-0">
+        <h2 class="text-center pt-5">Before & After Treatment</h2>
+        <div class="py-5">
+            <div class="container">
+                <h2>Result 1:</h2>
+                <div class="row">
+                    <div class="col-12 col-lg-8 col-xl-6">
+                        <div id="comparison">
+                            <figure class="treatment-before-after-1">
+                                <div id="divisor"></div>
+                            </figure>
+                            <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-6 pl-lg-5">
+                        <ul class="list-group m-lg-5 ">
+                            <li class="list-group-item"><strong>Skin tendency:</strong> Not sensitive</li>
+                            <li class="list-group-item"><strong>Skin Type:</strong> Mixed oily skin</li>
+                            <li class="list-group-item"><strong>Pigmentation problem:</strong> Melasma</li>
+                            <li class="list-group-item"><strong>Melanin index reduction:</strong> -40%</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="py-5">
+            <div class="container">
+                <h2>Result 2:</h2>
+                <div class="row">
+                    <div class="col-12 col-lg-8 col-xl-6">
+                        <div id="comparison">
+                            <figure class="treatment-before-after-2">
+                                <div id="divisor1"></div>
+                            </figure>
+                            <input type="range" min="0" max="100" value="50" id="slider1" oninput="moveDivisor1()">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-6 pl-lg-5">
+                        <ul class="list-group m-lg-5 ">
+                            <li class="list-group-item"><strong>Skin tendency:</strong> Not sensitive</li>
+                            <li class="list-group-item"><strong>Skin Type:</strong> Dry skin</li>
+                            <li class="list-group-item"><strong>Pigmentation problem:</strong> Melasma</li>
+                            <li class="list-group-item"><strong>Melanin index reduction:</strong> -32%</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            var divisor = document.getElementById("divisor"),
+                slider = document.getElementById("slider");
+
+            function moveDivisor() {
+                divisor.style.width = slider.value + "%";
+            }
+
+            var divisor1 = document.getElementById("divisor1"),
+                slider1 = document.getElementById("slider1");
+
+            function moveDivisor1() {
+                divisor1.style.width = slider1.value + "%";
+            }
+        </script>
+    </section>
+
+
+
+    <section class="section bg-light mb-5 p-0">
         <h2 class="text-center pt-5">Treatment Protocol</h2>
         <div class="album py-5">
             <div class="container">

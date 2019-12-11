@@ -1,9 +1,23 @@
- // AOS.init({
- // 	duration: 800,
- // 	easing: 'slide'
- // });
+
+//Event listener for mailto, tel, form submissions - tags
+document.addEventListener('DOMContentLoaded', function() { //Attach analytics to any telephone or mailto links
+    $("a[href^='tel:']").click(function() {
+        ga('send', 'event', 'Contact', 'Tel Clicked', $(this).attr('href').substr(4));
+    });
+    $("a[href^='mailto:']").click(function() {
+        ga('send', 'event', 'Contact', 'Mailto Clicked', $(this).attr('href').substr(7));
+	});
+	$("input[type='submit']").click(function() {
+        ga('send', 'event', 'Contact Form Submission', 'Contact Form Submitted', $(this).attr('value').substr(12));
+	});
+	$("button[type='submit']").click(function() {
+        ga('send', 'event', 'Booking Form Submission', 'Booking Form Submitted', $(this).attr('value').substr(6));
+    });
+});
 
 (function($) {
+
+	
 
 	"use strict";
 
@@ -290,23 +304,6 @@ slider = document.getElementById("slider");
 function moveDivisor() { 
 	divisor.style.width = slider.value+"%";
 }
-
-
-//Event listener for mailto, tel, form submissions - tags
-document.addEventListener('DOMContentLoaded', function() { //Attach analytics to any telephone or mailto links
-    $("a[href^='tel:']").click(function() {
-        ga('send', 'event', 'Contact', 'Tel Clicked', $(this).attr('href').substr(4));
-    });
-    $("a[href^='mailto:']").click(function() {
-        ga('send', 'event', 'Contact', 'Mailto Clicked', $(this).attr('href').substr(7));
-	});
-	$("input[type='submit']").click(function() {
-        ga('send', 'event', 'Contact Form Submission', 'Contact Form Submitted', $(this).attr('value').substr(12));
-	});
-	$("button[type='submit']").click(function() {
-        ga('send', 'event', 'Booking Form Submission', 'Booking Form Submitted', $(this).attr('value').substr(6));
-    });
-});
 
 })(jQuery);
 
